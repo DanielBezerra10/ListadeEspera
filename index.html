@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurante Bezerra</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+    <h1>Restaurante Bezerra</h1>
+    <p class="comentario">Seja bem vindo ao melhor restaurante da região!!</p>
+    <p class="titulos">Digite seu nome: </p> <input type="text" id="cliente"> <br> <br>
+    <p class="titulos">Digite o número de pessoas que virão: </p> <input type="text" id="QuantidadeClientes"> <br> <br>
+    <p class="titulos">Verificar mesas disponíveis:</p> <button onclick="registrarCliente()">Verificar</button> <br> <br>
+    <p class="titulos">Número da mesa para liberar (1 a 5):</p><input type="text" id="mesaLiberar">
+    <button onclick="liberarMesa()">Liberar Mesa</button><br><br>
+
+    <p class="titulos">Ver posição do cliente na fila de espera:</p> <input type="text" id="nomeBusca">
+    <button onclick="verificarPosicao()">Verificar Posição</button><br><br>
+
+
+    <p id="retorno"></p> <br> <br>
+    <p id="espera"></p> <br> <br>
+    <p id="posicao"></p>
+
+    
+
+
+    <script src="script.js"></script>
+</body>
+</html>
